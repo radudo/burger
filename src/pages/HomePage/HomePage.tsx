@@ -3,7 +3,7 @@ import './HomePage.scss';
 import logo from '../../assets/img/logo.svg';
 
 const HomePage = () => (
-  <div className="App">
+/*   <div className="App">
   <header className="App-header">
     <p>Edited Piece of code</p>
     <img src={logo} className="App-logo" alt="logo" />
@@ -19,6 +19,11 @@ const HomePage = () => (
       Learn React
     </a>
   </header>
+</div> */
+<div className="Home">
+  <div className="Home-wrapper">
+    
+  </div>
 </div>
 );
 

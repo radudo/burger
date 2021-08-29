@@ -1,28 +1,45 @@
 nav {
-  background: #222;
-  padding: 0 15px;
+    background: #222;
+    width: 100%;
+    height: 55px;
+    background: #1f252d;
+    position: sticky;
+    top: -1px;
+    z-index: 99999;
 }
 a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 .menu,
 .submenu {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    @media screen and (max-width: 992px){
+        padding-left: 0
+    }
 }
 .logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
+    font-size: 20px !important;
+    padding: 7.5px 10px 7.5px 0;
 }
 .item {
-  padding: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .item.button {
-  padding: 9px 5px;
+    padding: 9px 5px;
 }
 .item:not(.button) a:hover,
 .item a:hover::after {
-  color: #ccc;
+    color: #ccc;
+}
+.wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }

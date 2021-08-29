@@ -18,26 +18,27 @@ export default function Routes() {
     <Router>
       <nav>
         <ul id="menu" className="menu">
-          <li className="logo">
+          <li className="logo item">
             <Link to="/">Burgers TM</Link>
           </li>
           <li className="item">
             <Link to="/">Feed</Link>
           </li>
           <li className="item">
-            <Link to="/home">Home</Link>
+            <Link to="/home-page">Home</Link>
           </li>
         </ul>
-        </nav>
+      </nav>
+      <div className="wrapper">
         <Switch>
           <Route exact path="/">
             <FeedPage />
           </Route>
-          <Route path="/feed-page">
+          <Route path="/home-page">
             <HomePage />
           </Route>
         </Switch>
+      </div>
     </Router>
   );
 }
-
