@@ -36,7 +36,7 @@ export class UploadImages extends React.Component<
     let { imagePreviewUrl } = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = <img src={imagePreviewUrl} />;
+      $imagePreview = <img src={imagePreviewUrl} alt="upload file user"/>;
     } else {
       $imagePreview = (
         <div className="previewText">Please select an Image of your juicy burger </div>

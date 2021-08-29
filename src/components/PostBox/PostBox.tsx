@@ -1,10 +1,5 @@
-import React, {useState} from "react";
 import "./PostBox.scss";
-import { UploadImages } from "../UploadImages/UploadImages";
 import { TextField } from "@material-ui/core";
-interface Files {
-  trfaget: null
-}
 const PostBox = () => {
 
   return (

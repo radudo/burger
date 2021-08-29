@@ -1,4 +1,5 @@
 import React from "react";
+import UserAvatarDefault from "../../assets/img/download.png";
 import "./Routing.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FeedPage from "../FeedPage/FeedPage";
@@ -18,15 +19,36 @@ export default function Routes() {
     <Router>
       <nav>
         <ul id="menu" className="menu">
-          <li className="logo item">
-            <Link to="/">Burgers TM</Link>
-          </li>
-          <li className="item">
-            <Link to="/">Feed</Link>
-          </li>
-          <li className="item">
-            <Link to="/home-page">Home</Link>
-          </li>
+          <div className="left-side">
+            <li className="logo item">
+              <Link to="/">Burgers TM</Link>
+            </li>
+            <li className="item">
+              <Link to="/">Feed</Link>
+            </li>
+            <li className="item">
+              <Link to="/">Find a Restaurant</Link>
+            </li>
+          </div>
+          <div className="right-side">
+            <li className="item profile">
+              <Link to="/home-page">
+                <div className="profile-wrapper">
+                  <div className="profile-name item">
+                    <div className="name">Your page</div>
+                    <div className="user-tag">@use2x02</div>
+                  </div>
+                  <div className="profile-picture">
+                    <img
+                      className="profile-avatar"
+                      src={UserAvatarDefault}
+                      alt="user avatar"
+                    />
+                  </div>
+                </div>
+              </Link>
+            </li>
+          </div>
         </ul>
       </nav>
       <div className="wrapper">
