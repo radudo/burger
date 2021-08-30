@@ -1,4 +1,5 @@
 import Box from "../../components/Box/Box";
+import PostDialog from "../../components/PostDialog/PostDialog";
 import React, { Component } from "react";
 import "./FeedPage.scss";
 import { IProps } from "../../models/IProps";
@@ -32,6 +33,8 @@ export default class FeedPage extends Component<IProps, IState> {
           </div>
         </div>
         {this.state.showHide ? <Box /> : null}
+        <PostDialog/>
+
       </div>
     );
   }

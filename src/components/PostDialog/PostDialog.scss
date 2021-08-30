@@ -1,0 +1,65 @@
+.PostBox {
+  //Desktop
+  background: whitesmoke;
+  box-shadow: 0 5px 7px 7px rgb(0 0 0 / 10%);
+  border-radius: 30px;
+  width: 700px;
+  height: 500px;
+  margin-top: 35px;
+  overflow: hidden;
+
+  &--header {
+    height: 70px;
+    background: black;
+    &__wrapper {
+      display: flex;
+      padding: 0 9px;      
+      height: 100%;
+      align-items: center;
+      .user--profile{
+        display: flex;
+        &__picture{
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: grey;
+          overflow: hidden;
+          img{
+            width: 50px;
+          }
+        }
+        &__username{
+          flex-direction: column;
+          font-size: 10px;
+          color: white;
+        }
+        &__location{
+          color: white;
+          font-size: 13px;
+        }
+        .right{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 4px
+        }
+      }
+    }
+  }
+
+  &--wrapper {
+    padding: 20px;
+    &__title {
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  }
+  //Tablet
+  @media screen and (max-width: 800px) {
+    width: 80vw;
+  }
+  //Mobile
+  @media screen and (max-width: 400px) {
+    width: 100vw;
+  }
+}
