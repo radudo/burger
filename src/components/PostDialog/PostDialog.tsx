@@ -11,11 +11,9 @@ import profileDefault from "../../assets/img/download.png";
 import { AiFillStar } from "react-icons/ai";
 import { BPost } from "../../models/BPost";
 //const burgerLink ="https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
-const state = {
-  likeClicked: false,
-};
 
-const PostDialog = ({user,picture,likes,rating,description,location,liked}: BPost) => (
+
+const PostDialog = ({user,picture,likes,rating,description,location}: BPost) => (
   
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">

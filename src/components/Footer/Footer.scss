@@ -1,0 +1,32 @@
+.Footer {
+  width: 100vw;
+  background-color: black;
+  margin-top: 20px;
+  height: 200px;
+  text-align: center;
+  &--Wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    &__SocialMedia {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: 700px;
+        justify-content: space-evenly;
+        margin-top: 30px;
+      .someIcon{
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+      }
+    }
+  }
+  &--CopyRights{
+      color:white;
+      display: flex;
+      margin-top:60px;
+      font-weight: 300;
+      justify-content: center;
+  }
+}

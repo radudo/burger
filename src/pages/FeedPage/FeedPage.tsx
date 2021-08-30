@@ -30,7 +30,6 @@ export default class FeedPage extends React.Component<IProps, IState> {
     console.log(this.state.showHide);
   }
   render() {
-    const burgers = Array.from(data);
     return (
       <div className="feed-wrapper">
         <div className="upload-wrapper">

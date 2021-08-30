@@ -4,15 +4,9 @@ import "./Routing.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FeedPage from "../FeedPage/FeedPage";
 import HomePage from "../HomePage/HomePage";
+import Footer from "../../components/Footer/Footer"
+import { MdNotificationsNone } from "react-icons/md";
 
-// This site has 3 pages, all of which are rendered
-// dynamically in the browser (not server rendered).
-//
-// Although the page does not ever refresh, notice how
-// React Router keeps the URL up to date as you navigate
-// through the site. This preserves the browser history,
-// making sure things like the back button and bookmarks
-// work properly.
 
 export default function Routes() {
   return (
@@ -32,7 +26,8 @@ export default function Routes() {
           </div>
           <div className="right-side">
             <li className="item profile">
-              <Link to="/home-page">
+            <div><MdNotificationsNone className="notification-bell" /></div>
+              <Link to="/user-profile">
                 <div className="profile-wrapper">
                   <div className="profile-name item">
                     <div className="name">Your page</div>
@@ -61,6 +56,7 @@ export default function Routes() {
           </Route>
         </Switch>
       </div>
+      <Footer/>
     </Router>
   );
 }

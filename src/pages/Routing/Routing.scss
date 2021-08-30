@@ -32,12 +32,18 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width: 325){
+                display: none;
+            }
    
         }
         .profile-name{
             align-items: flex-start;
             display: flex;
             flex-direction: column;
+            @media screen and (max-width: 500px){
+                display: none;
+            }
             .user-tag{
                 font-size: 10px;
             }
@@ -57,12 +63,24 @@ a {
 .logo {
     font-size: 20px !important;
     padding: 7.5px 10px 7.5px 0;
+    @media screen and (max-width: 500px){
+        text-align: left !important;
+    }
+}
+.notification-bell{
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
 }
 .item {
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 500px){
+        text-align: center;
+    }
 }
 .item.button {
     padding: 9px 5px;

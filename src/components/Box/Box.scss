@@ -14,14 +14,22 @@
           width: 100%;
       }
     }
+    .rating-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      .rating-stars{
+        font-size: 3.875rem;
+      }
+    }
   }
-
   //Tablet
   @media screen and (max-width: 800px) {
     width: 80vw;
   }
   //Mobile
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     width: 100vw;
   }
 }
