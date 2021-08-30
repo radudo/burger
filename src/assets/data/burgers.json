@@ -4,7 +4,7 @@
         "picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg",
         "likes": 2441,
         "rating": 4,
-        "description": "Great experience totally recomend",
+        "description": "Great experience",
         "location":"Beef O'clock, Horsens"
     },
     {
@@ -12,7 +12,7 @@
         "picture":"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
         "likes": 103,
         "rating": 3.5,
-        "description": "Best Beef patty I have ever tried",
+        "description": "Best Beef patty ",
         "location":"Maxxi Burgers, Odense"
     },
     {
@@ -20,7 +20,7 @@
         "picture":"https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg",
         "likes": 56324,
         "rating": 5,
-        "description": "Full of taste, great value for money",
+        "description": "Full of taste, great value",
         "location":"Peri's Bistro, Copenhagen"
     },
     {

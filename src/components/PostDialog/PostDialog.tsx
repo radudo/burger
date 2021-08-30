@@ -9,11 +9,10 @@ import {
 import { BsPersonPlus } from "react-icons/bs";
 import profileDefault from "../../assets/img/download.png";
 import { AiFillStar } from "react-icons/ai";
-const burgerLink =
-  "https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
+import { BPost } from "../../models/BPost";
+//const burgerLink ="https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
 
-const PostDialog = () => (
-  
+const PostDialog = ({ user, picture, likes, rating, description, location }: BPost) => (
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">
       <div className="PostBox--header__wrapper">
@@ -26,9 +25,9 @@ const PostDialog = () => (
             </div>
             <div className="right">
               <div className="user--profile__location">
-                <FaLocationArrow /> Bones - Aarhus, Denmark
+                <FaLocationArrow /> {location}
               </div>
-              <div className="user--profile__username">@def01bgd</div>
+              <div className="user--profile__username">{user}</div>
             </div>
           </div>
           <div className="righside-wrapper">
@@ -43,7 +42,7 @@ const PostDialog = () => (
       </div>
     </div>
     <div className="PostBox--imageWrapper">
-      <img className="crop-center" src={burgerLink} alt="Burger Image" />
+      <img className="crop-center" src={picture} alt = "Burger Upload" />
     </div>
     <div className="PostBox--contentArea">
       <div className="PostBox--contentArea__wrapper">
@@ -51,8 +50,8 @@ const PostDialog = () => (
           <div className="leftArea--wrapper">
             <FaHamburger title="Like Burger" className="burgerLike" />
             <div className="votesDescription">
-              <div className="likes">Loved by <b>320 other..</b></div>
-              <div className="userHeadline">Great Burger lots of taste...</div>
+              <div className="likes">Loved by <b>{likes} other..</b></div>
+              <div className="userHeadline">{description}</div>
             </div>
           </div>
           <div>
@@ -65,7 +64,7 @@ const PostDialog = () => (
         </div>
         <div className="rating-zone">
           <div className="rating-text">
-            <span className="bold">Rating:</span> 4.5/5 <AiFillStar />
+            <span className="bold">Rating:</span> {rating}/5 <AiFillStar />
           </div>
         </div>
       </div>

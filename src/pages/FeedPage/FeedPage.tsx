@@ -1,18 +1,17 @@
 import Box from "../../components/Box/Box";
 import PostDialog from "../../components/PostDialog/PostDialog";
-import React, { Component } from "react";
+import React from "react";
 import "./FeedPage.scss";
 import { GoPlus } from "react-icons/go";
 import { IProps } from "../../models/IProps";
-import * as data from '../../assets/data/burgers.json';
-import {BPost} from '../../models/BPost'
+import data from "../../assets/data/burgers.json";
+import { BPost } from "../../models/BPost";
 
 interface IState {
   showHide?: boolean;
   burgers: BPost[];
 }
-export default class FeedPage extends Component<IProps, IState> {
-
+export default class FeedPage extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = {
@@ -31,16 +30,20 @@ export default class FeedPage extends Component<IProps, IState> {
     console.log(this.state.showHide);
   }
   render() {
+    const burgers = Array.from(data);
     return (
       <div className="feed-wrapper">
         <div className="upload-wrapper">
           <div onClick={() => this.displayUpload()} className="upload-button">
-            <div className="icon"><GoPlus/></div>
+            <div className="icon">
+              <GoPlus />
+            </div>
           </div>
         </div>
         {this.state.showHide ? <Box /> : null}
-        <PostDialog dataParentToChild = {data}/>
-
+        {this.state.burgers.map((burger: BPost) => (
+          <PostDialog {...burger} />
+        ))}
       </div>
     );
   }

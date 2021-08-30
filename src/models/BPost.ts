@@ -1,6 +1,6 @@
 export interface BPost{
-    user: String,
-    picture: String,
+    user: string,
+    picture: string,
     likes: Number,
     rating: Number,
     description: String,
