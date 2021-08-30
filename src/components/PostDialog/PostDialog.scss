@@ -34,7 +34,7 @@
           }
         }
         &__username {
-          &:hover{
+          &:hover {
             color: #ccc;
           }
           flex-direction: column;
@@ -43,7 +43,7 @@
           cursor: pointer;
         }
         &__location {
-          &:hover{
+          &:hover {
             color: #ccc;
           }
           color: white;
@@ -61,7 +61,7 @@
           display: flex;
         }
         .righside-wrapper {
-          &:hover{
+          &:hover {
             color: #ccc;
           }
           display: flex;
@@ -90,12 +90,25 @@
   }
 
   //Image Wrapper
-  &--imageWrapper{
-    .crop-center{
-      object-fit: cover; /* Do not scale the image */
-      object-position: center; /* Center the image within the element */
+  &--imageWrapper {
+    .crop-center {
+      object-fit: cover; 
+      object-position: center;
       height: 300px;
       width: 100%;
+    }
+  }
+  &--contentArea {
+    &__wrapper {
+      height: 100%;
+      padding: 9px;
+      width: 100%;
+      .actions_area {
+        .burger_icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
   }
 

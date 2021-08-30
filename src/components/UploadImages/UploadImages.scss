@@ -21,6 +21,8 @@
   text-align: center;
   margin: 5px 15px;
   margin-left: 0px;
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
   height: 500px;
   border-radius: 11px;
   margin-top: 10px;

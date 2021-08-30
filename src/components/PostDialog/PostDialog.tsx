@@ -1,6 +1,6 @@
 import React from "react";
 import "./PostDialog.scss";
-import { FaLocationArrow } from 'react-icons/fa';
+import { FaLocationArrow, FaHamburger } from 'react-icons/fa';
 import { BsPersonPlus } from "react-icons/bs";
 import burger from '../../assets/img/burger1.jpeg'
 
@@ -34,6 +34,15 @@ const PostDialog = () => (
     </div>
     <div className="PostBox--imageWrapper">
       <img className="crop-center" src={burger} alt="" />
+    </div>
+    <div className="PostBox--contentArea">
+      <div className="PostBox--contentArea__wrapper">
+        <div className="actions-area">
+          <div className="burgerLike">
+            <FaHamburger/>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 );
