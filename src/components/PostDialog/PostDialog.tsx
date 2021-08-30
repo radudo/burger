@@ -1,12 +1,16 @@
 import React from "react";
 import "./PostDialog.scss";
 import { FaLocationArrow } from 'react-icons/fa';
+import { BsPersonPlus } from "react-icons/bs";
+import burger from '../../assets/img/burger1.jpeg'
+
 import profileDefault from "../../assets/img/download.png";
 const PostDialog = () => (
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">
       <div className="PostBox--header__wrapper">
         <div className="user--profile">
+          <div className="leftside-wrapper">
           <div className="left">
             <div className="user--profile__picture">
               <img src={profileDefault} alt="user profile avatar" />
@@ -18,11 +22,18 @@ const PostDialog = () => (
             </div>
             <div className="user--profile__username">@def01bgd</div>
           </div>
+          </div>
+          <div className="righside-wrapper">
+            <div className="follow-box">
+              <div className="follow-box__icon"><BsPersonPlus className="icon"/></div>
+              <div className="follow-box__text">Follow</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div className="PostBox--wrapper">
-      <h3 className="PostBox--wrapper__title">How was your burger?</h3>
+    <div className="PostBox--imageWrapper">
+      <img className="crop-center" src={burger} alt="" />
     </div>
   </div>
 );
