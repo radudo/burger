@@ -4,19 +4,24 @@ import React, { Component } from "react";
 import "./FeedPage.scss";
 import { GoPlus } from "react-icons/go";
 import { IProps } from "../../models/IProps";
+import * as data from '../../assets/data/burgers.json';
+import {BPost} from '../../models/BPost'
 
 interface IState {
   showHide?: boolean;
+  burgers: BPost[];
 }
 export default class FeedPage extends Component<IProps, IState> {
 
   constructor(props: IProps) {
     super(props);
     this.state = {
-      showHide: false
+      showHide: false,
+      burgers: data as BPost[],
     };
 
     this.displayUpload = this.displayUpload.bind(this);
+    console.log(this.state.burgers);
   }
   displayUpload() {
     this.setState((previousState, props) => ({
@@ -34,7 +39,7 @@ export default class FeedPage extends Component<IProps, IState> {
           </div>
         </div>
         {this.state.showHide ? <Box /> : null}
-        <PostDialog/>
+        <PostDialog dataParentToChild = {data}/>
 
       </div>
     );

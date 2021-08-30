@@ -1,0 +1,42 @@
+[
+    {
+        "user":"dexter2",
+        "picture":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1200px-RedDot_Burger.jpg",
+        "likes": 2441,
+        "rating": 4,
+        "description": "Great experience totally recomend",
+        "location":"Beef O'clock, Horsens"
+    },
+    {
+        "user":"al2fred",
+        "picture":"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "likes": 103,
+        "rating": 3.5,
+        "description": "Best Beef patty I have ever tried",
+        "location":"Maxxi Burgers, Odense"
+    },
+    {
+        "user":"burgerLover",
+        "picture":"https://twisper.com/wp-content/uploads/2020/03/close-up-photo-of-burger-3915906-scaled.jpg",
+        "likes": 56324,
+        "rating": 5,
+        "description": "Full of taste, great value for money",
+        "location":"Peri's Bistro, Copenhagen"
+    },
+    {
+        "user":"mike",
+        "picture":"https://loveincorporated.blob.core.windows.net/contentimages/main/dbc904ac-b489-4de0-9cb8-98d123c8bac2-bc96df8d-4eb3-4249-86aa-9b11fce9c377-michigan.jpg",
+        "likes": 150,
+        "rating": 5,
+        "description": "Words can't describe this burger",
+        "location":"TasteBudds, Aarhis"
+    },
+    {
+        "user":"j0nace",
+        "picture":"https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        "likes": 3421,
+        "rating": 3,
+        "description": "Best burger I hav every tried",
+        "location":"Origins Grill, Copenhagen"
+    }
+]

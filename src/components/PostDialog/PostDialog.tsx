@@ -13,6 +13,7 @@ const burgerLink =
   "https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
 
 const PostDialog = () => (
+  
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">
       <div className="PostBox--header__wrapper">
