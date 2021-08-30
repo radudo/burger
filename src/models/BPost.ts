@@ -4,5 +4,6 @@ export interface BPost{
     likes: Number,
     rating: Number,
     description: String,
-    location: String
+    location: String,
+    liked?: Boolean
 }

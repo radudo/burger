@@ -11,8 +11,12 @@ import profileDefault from "../../assets/img/download.png";
 import { AiFillStar } from "react-icons/ai";
 import { BPost } from "../../models/BPost";
 //const burgerLink ="https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
+const state = {
+  likeClicked: false,
+};
 
-const PostDialog = ({ user, picture, likes, rating, description, location }: BPost) => (
+const PostDialog = ({user,picture,likes,rating,description,location,liked}: BPost) => (
+  
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">
       <div className="PostBox--header__wrapper">
@@ -42,15 +46,24 @@ const PostDialog = ({ user, picture, likes, rating, description, location }: BPo
       </div>
     </div>
     <div className="PostBox--imageWrapper">
-      <img className="crop-center" src={picture} alt = "Burger Upload" />
+      <img className="crop-center" src={picture} alt="Burger Upload" />
     </div>
     <div className="PostBox--contentArea">
       <div className="PostBox--contentArea__wrapper">
         <div className="actions-area">
           <div className="leftArea--wrapper">
-            <FaHamburger title="Like Burger" className="burgerLike" />
+            <FaHamburger
+              title="Like Burger"
+    /*  Stateless Component --> Needs Fixing onClick={() => {state.likeClicked = !state.likeClicked;}}
+              style={{
+                color: { liked } ? "black" : "red",
+              }} */
+              className="burgerLike"
+            />
             <div className="votesDescription">
-              <div className="likes">Loved by <b>{likes} other..</b></div>
+              <div className="likes">
+                Loved by <b>{likes} other..</b>
+              </div>
               <div className="userHeadline">{description}</div>
             </div>
           </div>
@@ -72,7 +85,9 @@ const PostDialog = ({ user, picture, likes, rating, description, location }: BPo
     <div className="PostBox--commentArea">
       <div className="comment-box">
         <hr />
-        <div className="leaveComment">Let the author know what you think of his burger...</div>
+        <div className="leaveComment">
+          Let the author know what you think of his burger...
+        </div>
       </div>
     </div>
   </div>
