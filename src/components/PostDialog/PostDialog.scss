@@ -99,12 +99,16 @@
     }
   }
   &--contentArea {
+    display: flex;
     &__wrapper {
       height: 100%;
       padding: 9px;
       width: 100%;
       .actions-area {
-        margin: 0 10px;
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+
         .burgerLike {
           cursor: pointer;
           width: 30px;
@@ -115,10 +119,53 @@
           cursor: pointer;
           width: 30px;
           height: 30px;
+          margin-right: 10px;
+        }
+        .bookMark {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          //margin-right: 10px;
+        }
+        .userHeadline {
+          font-weight: 500;
         }
       }
-      .comments-area{
-        
+      .rating-zone {
+        margin: 0 10px;
+
+        .rating-text {
+          font-family: "Roboto", sans-serif;
+          .bold {
+            font-weight: bold;
+          }
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .leftArea--wrapper {
+        display: flex;
+        align-items: center;
+        .likes {
+          font-size: 10px;
+        }
+        .votesDescriptions {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  &--commentArea {
+    .comment-box {
+      .leaveComment {
+        display: flex;
+        margin: 0 20px;
+        font-size: 12px;
+        opacity: 0.6;
+        user-select: none;
+        cursor: pointer;
       }
     }
   }
@@ -128,7 +175,7 @@
     width: 80vw;
   }
   //Mobile
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     width: 100vw;
   }
 }

@@ -24,6 +24,9 @@
       font-size: 25px;
       font-weight: 500;
       transition: transform 0.4s ease-in;
+      .icon {
+        display: flex;
+      }
     }
     .upload-button:hover {
       transform: scale(1.1);

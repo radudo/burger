@@ -2,6 +2,7 @@ import Box from "../../components/Box/Box";
 import PostDialog from "../../components/PostDialog/PostDialog";
 import React, { Component } from "react";
 import "./FeedPage.scss";
+import { GoPlus } from "react-icons/go";
 import { IProps } from "../../models/IProps";
 
 interface IState {
@@ -29,7 +30,7 @@ export default class FeedPage extends Component<IProps, IState> {
       <div className="feed-wrapper">
         <div className="upload-wrapper">
           <div onClick={() => this.displayUpload()} className="upload-button">
-            <div className="icon">+</div>
+            <div className="icon"><GoPlus/></div>
           </div>
         </div>
         {this.state.showHide ? <Box /> : null}
