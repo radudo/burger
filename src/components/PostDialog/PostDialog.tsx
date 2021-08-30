@@ -1,11 +1,12 @@
 import React from "react";
 import "./PostDialog.scss";
-import { FaLocationArrow, FaHamburger } from 'react-icons/fa';
+import { FaLocationArrow, FaHamburger,FaShare } from 'react-icons/fa';
 import { BsPersonPlus } from "react-icons/bs";
-import burger from '../../assets/img/burger1.jpeg'
-
 import profileDefault from "../../assets/img/download.png";
+const burgerLink = "https://cdn.vox-cdn.com/thumbor/an4QCXElEmaeZAhN3xf5fK3Xe0Q=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22276249/McPlant_Burger.png";
+
 const PostDialog = () => (
+  
   <div className="PostBox" data-testid="PostBox">
     <div className="PostBox--header">
       <div className="PostBox--header__wrapper">
@@ -33,13 +34,14 @@ const PostDialog = () => (
       </div>
     </div>
     <div className="PostBox--imageWrapper">
-      <img className="crop-center" src={burger} alt="" />
+      <img className="crop-center" src={burgerLink} alt="Burger Image" />
     </div>
     <div className="PostBox--contentArea">
       <div className="PostBox--contentArea__wrapper">
         <div className="actions-area">
-          <div className="burgerLike">
-            <FaHamburger/>
+          <div >
+            <FaHamburger title="Like Burger" className="burgerLike"/>
+            <FaShare title="Share the Burger" className="shareIcon" />
           </div>
         </div>
       </div>

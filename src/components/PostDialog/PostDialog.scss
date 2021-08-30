@@ -92,7 +92,7 @@
   //Image Wrapper
   &--imageWrapper {
     .crop-center {
-      object-fit: cover; 
+      object-fit: cover;
       object-position: center;
       height: 300px;
       width: 100%;
@@ -103,11 +103,22 @@
       height: 100%;
       padding: 9px;
       width: 100%;
-      .actions_area {
-        .burger_icon {
+      .actions-area {
+        margin: 0 10px;
+        .burgerLike {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+        .shareIcon {
+          cursor: pointer;
           width: 30px;
           height: 30px;
         }
+      }
+      .comments-area{
+        
       }
     }
   }
