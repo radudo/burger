@@ -5,9 +5,9 @@ import PostDialog from './PostDialog';
 import { BPost } from '../../models/BPost';
 
 describe('<PostDialog />', () => {
+  let user : BPost;
   test('it should mount', () => {
-    let user : BPost;
-    render(<PostDialog {...user} />);
+    render(<PostDialog {...user}/>);
     
     const postDialog = screen.getByTestId('PostDialog');
 

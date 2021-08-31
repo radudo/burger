@@ -32,7 +32,7 @@ const PostDialog = ({id,user, picture, likes, rating, description, location, lik
                 <div className="user--profile__location">
                   <FaLocationArrow /> {location}
                 </div>
-                <div className="user--profile__username">{user}</div>
+                <div className="user--profile__username">@{user}</div>
               </div>
             </div>
             <div className="righside-wrapper">
@@ -87,7 +87,7 @@ const PostDialog = ({id,user, picture, likes, rating, description, location, lik
         <div className="comment-box">
           <hr />
           <div className="leaveComment">
-            Let the author know what you think of his burger...
+            Let @{user} know what you think of his burger...
           </div>
         </div>
       </div>
