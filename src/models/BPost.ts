@@ -1,4 +1,5 @@
 export interface BPost{
+    id: string,
     user: string,
     picture: string,
     likes: Number,

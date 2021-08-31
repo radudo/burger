@@ -16,7 +16,7 @@ export default class FeedPage extends React.Component<IProps, IState> {
     super(props);
     this.state = {
       showHide: false,
-      burgers: data as BPost[],
+      burgers: data as unknown as BPost[],
     };
 
     this.displayUpload = this.displayUpload.bind(this);
@@ -28,6 +28,9 @@ export default class FeedPage extends React.Component<IProps, IState> {
     }));
     //On Off Toggle for upload form
     console.log(this.state.showHide);
+  }
+  likeBurger(){
+
   }
   render() {
     return (
@@ -41,7 +44,7 @@ export default class FeedPage extends React.Component<IProps, IState> {
         </div>
         {this.state.showHide ? <Box /> : null}
         {this.state.burgers.map((burger: BPost) => (
-          <PostDialog {...burger} />
+          <PostDialog key={burger.id} {...burger} />
         ))}
       </div>
     );
