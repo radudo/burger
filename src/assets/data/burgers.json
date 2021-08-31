@@ -36,7 +36,23 @@
         "picture":"https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
         "likes": 3421,
         "rating": 3,
-        "description": "Best burger I hav every tried",
+        "description": "Best burger I hav ever tried",
         "location":"Origins Grill, Copenhagen"
+    },
+    {
+        "user":"j0ace",
+        "picture":"https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=728&q=80",
+        "likes": 321111,
+        "rating": 4.5,
+        "description": "Pretty decent",
+        "location":"Burger House, Kolding"
+    },
+    {
+        "user":"jce",
+        "picture":"https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80",
+        "likes": 33321,
+        "rating": 4,
+        "description": "Not great, not bad",
+        "location":"Grill the Deal, Copenhagen"
     }
 ]
